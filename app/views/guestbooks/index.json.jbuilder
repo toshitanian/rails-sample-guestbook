@@ -1,0 +1,1 @@
+json.array! @guestbooks, partial: 'guestbooks/guestbook', as: :guestbook

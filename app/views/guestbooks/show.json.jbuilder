@@ -1,0 +1,1 @@
+json.partial! "guestbooks/guestbook", guestbook: @guestbook
