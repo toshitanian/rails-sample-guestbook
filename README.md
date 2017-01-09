@@ -16,7 +16,7 @@ This is a very simple Ruby on Rails sample application.
 ```
 $ git clone git@github.com:kawasakitoshiya/rails-sample-guestbook.git
 $ cd rails-sample-guestbook
-$ export RAILS_ENV=development DB_HOST=localhost DB_USERNAME=sample DB_PASSWORD=password
+$ export RAILS_ENV=development DATABASE_URL=postgresql://postgres:password@localhost
 $ bundle install
 $ bundle exec rake db:create db:migrate
 $ bundle exec rake db:migrate
