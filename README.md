@@ -1,24 +1,25 @@
-# README
+# Simple Ruby on Rails Sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very simple Ruby on Rails sample application.
 
-Things you may want to cover:
+# Dependencies
+## Ruby version
+`2.3.0`
 
-* Ruby version
+## System dependencies
+- rbenv
+- PostgreSQL
+- NodeJS
 
-* System dependencies
+# Running Locally
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ git clone git@github.com:kawasakitoshiya/rails-sample-guestbook.git
+$ cd rails-sample-guestbook
+$ export RAILS_ENV=development DB_HOST=localhost DB_USERNAME=sample DB_PASSWORD=password
+$ bundle install
+$ bundle exec rake db:create db:migrate
+$ bundle exec rake db:migrate
+$ bundle exec rails s
+```
+Access to http://localhost:3000
