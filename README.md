@@ -35,3 +35,9 @@ $ docker build -t rails-sample-guestbook .
 ```
 $ docker run -it -p 3000:3000 -e DATABASE_URL=postgresql://<db_user>:<db_password>@<db_host> rails-sample-guestbook
 ```
+
+## Run docker compose
+
+```
+$ docker-compose up
+```
