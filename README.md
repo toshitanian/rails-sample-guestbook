@@ -33,7 +33,13 @@ $ docker build -t rails-sample-guestbook .
 
 ## Run docker container
 ```
-$ docker run -it -p 3000:3000 -e DATABASE_URL=postgresql://<db_user>:<db_password>@<db_host> rails-sample-guestbook
+$ docker run -it -p 3000:3000 -e RAILS_ENV=production -e DATABASE_URL=postgresql://<db_user>:<db_password>@<db_host> -e SECRET_KEY_BASE=<secret_key_base> rails-sample-guestbook
+```
+
+## Run rake db command
+```
+$ docker run -it -e RAILS_ENV=production -e DATABASE_URL=postgresql://<db_user>:<db_password>@<db_host> rails-sample-guestbook rake db:create
+$ docker run -it -e RAILS_ENV=produciton -e DATABASE_URL=postgresql://<db_user>:<db_password>@<db_host> rails-sample-guestbook rake db:migrate
 ```
 
 ## Run docker compose
